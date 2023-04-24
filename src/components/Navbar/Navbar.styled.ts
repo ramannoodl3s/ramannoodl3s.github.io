@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Navbar = styled.div`
-    height: 6.5rem;
-    position: absolute;
+    min-height: 6.5rem;
     z-index: 99;
     display: flex;
     align-items: center;
@@ -22,6 +21,7 @@ export const NavbarContainer = styled.div`
     width: 100%;
     height: 100%;
     padding: 0 3rem;
+    flex-direction: column;
     /* background-color: green; */
 
     img {

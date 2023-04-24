@@ -11,7 +11,43 @@ import arrow2 from '../../assets/homepage/arrow2.png';
 import arrow3 from '../../assets/homepage/arrow3.png';
 import arrow4 from '../../assets/homepage/arrow4.png';
 import { useNavigate } from 'react-router-dom';
-import { Footer, Navbar } from "../../components";
+import { Footer } from "../../components";
+import logo from '../../assets/homepage/rcorplogo.png'
+import styled from "styled-components";
+
+const Navbar = styled.div`
+    height: 6.5rem;
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    height: 5rem;
+  }
+`;
+
+const NavbarContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 3rem;
+    flex-direction: column;
+    /* background-color: green; */
+
+    img {
+        width: auto;
+        height: 80px;
+        object-fit: cover;
+        max-width: 100%;
+        max-height: 100%;
+    }
+`;
 
 function Landing() {
     const navigate = useNavigate();
@@ -25,7 +61,11 @@ function Landing() {
 
     return (
         <>
-            <Navbar />
+            <Navbar>
+                <NavbarContainer>
+                    <img src={logo} />
+                </NavbarContainer>
+            </Navbar>
             <LandingDiv>
                 <LandingContainer>
                     <LeftLandingContainer>

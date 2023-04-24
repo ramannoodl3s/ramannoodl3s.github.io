@@ -1,5 +1,4 @@
-import { Navbar } from "../../components";
-import logo from '../../assets/homepage/rcorplogo.png';
+import { Container, Navbar, Wrapper } from "../../components";
 import logo3 from '../../assets/homepage/logo 3.png';
 import img21 from '../../assets/antonym/2.1.png';
 import img22 from '../../assets/antonym/2.2.png';
@@ -13,7 +12,8 @@ import img12 from '../../assets/antonym/3.png';
 import img13 from '../../assets/antonym/2.png';
 
 
-import { ANavbar, ANavbarContainer, AntonymContainer, AntonymDiv, BrandContainer, BrandDiv, BrandInfo, ImageContainer } from "./Antonym.styled";
+import { BrandContainer, BrandDiv, BrandInfo, ImageContainer } from "./Antonym.styled";
+import { NavbarContainer } from "../../components/Navbar/Navbar.styled";
 function Antonym() {
 
     const images = {
@@ -35,7 +35,7 @@ function Antonym() {
 
         if (el.type === 'image') {
             components.push(
-                <ImageContainer el={el.alt?.length} height="auto">
+                <ImageContainer key={i} el={el.alt?.length} height="auto">
                     {/* 
 // @ts-ignore */}
                     {el.alt?.map((item: string, i) => <img key={i} src={images[`${item}`]} />)}
@@ -44,7 +44,7 @@ function Antonym() {
             )
         } else {
             components.push(
-                <BrandInfo>
+                <BrandInfo key={i}>
                     {cleanText(el.content as string)}
                 </BrandInfo>
             )
@@ -53,18 +53,14 @@ function Antonym() {
     }
 
     function cleanText(txt: string) {
-        console.log(txt);
         return txt.split('\n').map((item, i) => (<span key={i}>{item} <br /></span>));
     }
     return (
         <>
-            <AntonymDiv id="div">
+            <Wrapper id="div">
 
-                <ANavbar id="nav">
-                    <ANavbarContainer>
-                        <img
-                            src={logo}
-                        />
+                <Navbar id="nav">
+                    <NavbarContainer>
                         <BrandDiv>
                             <BrandContainer>
                                 <img
@@ -75,12 +71,12 @@ function Antonym() {
                                 </BrandInfo>
                             </BrandContainer>
                         </BrandDiv>
-                    </ANavbarContainer>
-                </ANavbar>
-                <AntonymContainer id="container">
+                    </NavbarContainer>
+                </Navbar>
+                <Container id="container">
                     {components}
-                </AntonymContainer>
-            </AntonymDiv>
+                </Container>
+            </Wrapper>
         </>
 
     )
