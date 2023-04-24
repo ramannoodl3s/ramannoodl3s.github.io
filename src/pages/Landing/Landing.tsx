@@ -10,20 +10,16 @@ import arrow1 from '../../assets/homepage/arrow1.png';
 import arrow2 from '../../assets/homepage/arrow2.png';
 import arrow3 from '../../assets/homepage/arrow3.png';
 import arrow4 from '../../assets/homepage/arrow4.png';
-
-
-import {
-    FaInstagram,
-    FaTwitter,
-} from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 import { Footer, Navbar } from "../../components";
 
 function Landing() {
+    const navigate = useNavigate();
     const IconArray = [
-        [brandLogo1, arrow1],
-        [brandLogo2, arrow2],
-        [brandLogo3, arrow3],
-        [brandLogo4, arrow4]
+        [brandLogo1, arrow1, ''],
+        [brandLogo2, arrow2, ''],
+        [brandLogo3, arrow3, '/antonym'],
+        [brandLogo4, arrow4, '']
     ];
 
 
@@ -34,7 +30,7 @@ function Landing() {
                 <LandingContainer>
                     <LeftLandingContainer>
                         {IconArray.map((item, i) => (
-                            <LeftIconGroup key={i}>
+                            <LeftIconGroup onClick={() => navigate(item[2])} key={i}>
                                 <img src={item[0]}></img>
                                 <img src={item[1]}></img>
                             </LeftIconGroup>
