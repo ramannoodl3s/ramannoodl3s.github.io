@@ -430,4 +430,4 @@ img {
 		overflow-x: hidden;
 	}
 }
-`;function Xy(){return He(Iu,{children:[U(Yy,{}),He(Ug,{children:[U(xu,{path:"/",element:U(Oy,{})}),U(xu,{path:"/antonym",element:U(by,{})})]})]})}km.render(U(ln.StrictMode,{children:U(Bg,{children:U(Xy,{})})}),document.getElementById("root"));
+`;function Xy(){return He(Iu,{children:[U(Yy,{}),He(Ug,{children:[U(xu,{path:"/",element:U(Oy,{})}),U(xu,{path:"/antonym",element:U(by,{})})]})]})}km.render(U(ln.StrictMode,{children:U(Bg,{basename:"/rcorp-site",children:U(Xy,{})})}),document.getElementById("root"));
