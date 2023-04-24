@@ -5,8 +5,57 @@ import img21 from '../../assets/antonym/2.1.png';
 import img22 from '../../assets/antonym/2.2.png';
 import img23 from '../../assets/antonym/2.3.png';
 import img1 from '../../assets/antonym/1.png';
+import jav1 from '../../assets/antonym/jav1.png';
+import jav2 from '../../assets/antonym/jav2.png';
+import data from '../../data/Antonym.json';
+import img11 from '../../assets/antonym/1 (2).png';
+import img12 from '../../assets/antonym/3.png';
+import img13 from '../../assets/antonym/2.png';
+
+
 import { ANavbar, ANavbarContainer, AntonymContainer, AntonymDiv, BrandContainer, BrandDiv, BrandInfo, ImageContainer } from "./Antonym.styled";
 function Antonym() {
+
+    const images = {
+        img1: img1,
+        img21,
+        img23,
+        img22,
+        jav1,
+        jav2,
+        img11,
+        img12,
+        img13
+    }
+
+    const components = [];
+
+    for (let i = 0; i < data.length; i++) {
+        const el = data[i];
+
+        if (el.type === 'image') {
+            components.push(
+                <ImageContainer el={el.alt?.length} height="auto">
+                    {/* 
+// @ts-ignore */}
+                    {el.alt?.map((item: string, i) => <img key={i} src={images[`${item}`]} />)}
+
+                </ImageContainer>
+            )
+        } else {
+            components.push(
+                <BrandInfo>
+                    {cleanText(el.content as string)}
+                </BrandInfo>
+            )
+        }
+
+    }
+
+    function cleanText(txt: string) {
+        console.log(txt);
+        return txt.split('\n').map((item, i) => (<span key={i}>{item} <br /></span>));
+    }
     return (
         <>
             <AntonymDiv id="div">
@@ -26,39 +75,10 @@ function Antonym() {
                                 </BrandInfo>
                             </BrandContainer>
                         </BrandDiv>
-                        {/* <ImageContainer width="80%" height="auto">
-                        <img
-                            src={img1}
-                        />
-                    </ImageContainer>
-                    <BrandInfo>
-                        "project LxGHTSPEED"<br />completed 06.04.22<br />1997 Subaru Alycone SVX.<br />electric powertrain.
-                    </BrandInfo> */}
                     </ANavbarContainer>
                 </ANavbar>
                 <AntonymContainer id="container">
-                    <ImageContainer width="80%" height="auto">
-                        <img
-                            src={img1}
-                        />
-                    </ImageContainer>
-                    <BrandInfo style={{ marginTop: '2rem', marginBottom: '2rem' }}>
-                        {"project LxGHTSPEED"}<br />{'completed 06.04.22'}<br />{'1997 Subaru Alycone SVX.'}<br />{'electric powertrain.'}<br /><br />{`"sometimes i still dream of living a normal life.`}<br />{`maybe i'll use my craziness to change the world instead."`}
-                    </BrandInfo>
-                    <ImageContainer el={3} width="30%" height="auto">
-                        <img
-                            src={img21}
-                        />
-                        <img
-                            src={img22}
-                        />
-                        <img
-                            src={img23}
-                        />
-                    </ImageContainer>
-                    <BrandInfo style={{ marginTop: '2rem', marginBottom: '2rem' }}>
-                        {"~"}
-                    </BrandInfo>
+                    {components}
                 </AntonymContainer>
             </AntonymDiv>
         </>

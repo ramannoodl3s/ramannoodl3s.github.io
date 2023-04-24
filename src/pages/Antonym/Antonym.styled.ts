@@ -42,6 +42,26 @@ export const BrandContainer = styled.div`
         object-fit: cover;
         max-width: 100%;
         max-height: 100%;
+
+        @media (max-width: 1100px) {
+            height: 110px;
+        }
+
+        @media (max-width: 900px) {
+            height: 100px;
+        }
+
+        @media (max-width: 800px) {
+            height: 85px;
+        }
+
+        @media (max-width: 600px) {
+            height: 70px;
+        }
+
+        @media (max-width: 500px) {
+            height: 50px;
+        }
     }
 `;
 
@@ -81,13 +101,24 @@ export const BrandInfo = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     color: white;
     text-align: center;
     font-size: 1.2rem;
     font-weight: 200;
+    margin: 2rem 0;
+
+
+    @media (max-width: 1100px) {
+        font-size: 1rem;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 0.8rem;
+    }
 `;
 
-export const ImageContainer = styled.div<{ el?: number, height: string, width: string }>`
+export const ImageContainer = styled.div<{ el?: number, height: string, width?: string }>`
     display: flex;
     justify-content: center;
     align-items: center;
