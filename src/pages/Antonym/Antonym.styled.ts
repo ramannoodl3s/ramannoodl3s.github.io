@@ -131,4 +131,4 @@ export const ImageContainer = styled.div<{ el?: number, height: string, width?: 
         max-width: 100%;
         max-height: 100%;
     }
-`
+`;
