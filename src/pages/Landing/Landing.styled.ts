@@ -50,6 +50,10 @@ export const LeftIconGroup = styled.div`
         object-fit: cover;
         width: auto;
     }
+
+    :hover {
+        cursor: pointer;
+    }
 `
 
 export const RightLandingtContainer = styled.div`

@@ -55,7 +55,7 @@ function Landing() {
         [brandLogo1, arrow1, ''],
         [brandLogo2, arrow2, ''],
         [brandLogo3, arrow3, '/antonym'],
-        [brandLogo4, arrow4, '']
+        [brandLogo4, arrow4, '/vmax']
     ];
 
 
