@@ -52,8 +52,8 @@ const NavbarContainer = styled.div`
 function Landing() {
     const navigate = useNavigate();
     const IconArray = [
-        [brandLogo1, arrow1, ''],
-        [brandLogo2, arrow2, ''],
+        [brandLogo1, arrow1, '/'],
+        [brandLogo2, arrow2, '/shifta'],
         [brandLogo3, arrow3, '/antonym'],
         [brandLogo4, arrow4, '/vmax']
     ];
