@@ -1,4 +1,4 @@
-import { Container, Navbar, SerializedData, Wrapper } from "../../components";
+import { Container, Navbar, Wrapper } from "../../components";
 import logo from '../../assets/homepage/logo 4.png';
 import { BrandContainer, BrandDiv, BrandInfo } from "../Antonym/Antonym.styled";
 import img1 from '../../assets/vmax/pic1.png';
