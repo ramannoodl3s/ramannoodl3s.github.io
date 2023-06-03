@@ -13,4 +13,19 @@ export const ImageContainer = styled.div<{ el?: number, height: string, width?: 
         max-width: 100%;
         max-height: 100%;
     }
+
+    @media (max-width: 900px) {
+        img {
+            width: ${`${100/2}%`}
+        }
+    }
+
+    
+    @media (max-width: 750px) {
+        flex-direction: column;
+        flex: 1;
+        img {
+            width: ${`${100}%`}
+        }
+    }
 `;

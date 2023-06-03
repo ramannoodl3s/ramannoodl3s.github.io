@@ -3,16 +3,25 @@
         "type": "image",
         "alt": [
             "img01"
+        ],
+        "hover": [
+            "AK-47: On the Down Low\ncreated for CS:GO\ntextured in Substance Painter"
         ]
     },
     {
         "type": "image",
         "alt": [
             "img02"
+        ],
+        "hover": [
+            "Lethal Injection\ncreated for Splitgate\nmodeled in Blender, textured in Substance Painter"
         ]
     },
     {
         "type": "image",
+        "hover": [
+            "Zhora Mk.II\ncreated for Krunker.io\nmodeled in Blender, textured in Photoshop and Substance Painter"
+        ],
         "alt": [
             "img03"
         ]
@@ -24,6 +33,12 @@
             "img17",
             "img18",
             "img19"
+        ],
+        "hover": [
+            "RS470 | Bowman Mastery\ncreated for Krunker.io\nmodeled in Blender, textured in Armor Paint",
+            "FAMAS | Heatwave\ncreated for Krunker.io\nmodeled in Blender",
+            "Cryogen III\ncreated for Krunker.io\nmodeled in Blender",
+            "Vulkan's Assault Rifle\ncreated for Krunker.io / FACEit Season 3\nmodeled in Blender"
         ]
     },
     {
@@ -31,8 +46,14 @@
         "alt": [
             "img20",
             "img1",
-            "img5",
+            "img6",
             "img3"
+        ],
+        "hover": [
+            "Vulkan's Veagle\ncreated for Krunker.io\nFACEit Season 3\nmodeled in Blender",
+            "Saritch | SAR-502\ncreated for Krunker.io\nmodeled in Blender",
+            "Korth Nighthawk | Detective Mastery\ncreated for Krunker.io\nmodeled in Blender, textured in Armor Paint",
+            "UMP-45 | Cataclysm\ncreated for Krunker.io\nmodeled in Blender"
         ]
     },
     {
@@ -42,15 +63,27 @@
             "img5",
             "img2",
             "img7"
+        ],
+        "hover": [
+            "M82 | Royal\ncreated for Krunker.io\nmodeled in Blender",
+            "CZ-75 | Quickdraw\ncreated for Krunker.io\nmodeled in Blender",
+            "Vector .45 | veccy!\ncreated for Krunker.io\nmodeled in Blender",
+            "Sonic Shotgun\ncreated for Krunker.io\nmodeled in Blender"
         ]
     },
     {
         "type": "image",
         "alt": [
-            "img15",
+            "img9",
             "img8",
             "img10",
             "img11"
+        ],
+        "hover": [
+            "Coffin Cannon\ncreated for Krunker.io\nmodeled in Blender",
+            "USP | Sel-1609\ncreated for Krunker.io\nmodeled in Blender",
+            "Cafe Lancer\ncreated for Krunker.io\nmodeled in Blender",
+            "MP7 | Luv is rage\ncreated for Krunker.io\nmodeled in Blender"
         ]
     },
     {
@@ -60,6 +93,15 @@
             "img13",
             "img14",
             "img15"
+        ],
+        "hover": [
+            "Trooper Mastery\ncreated for Krunker.io\nmodeled in Blender",
+            
+            "ARISAKA!\ncreated for Krunker.io\nmodeled in Blender",
+            
+            "Maximum Boost\ncreated for Krunker.io\nmodeled in Blender, textured in Substance Painter",
+            
+            "Six12 | The Mighty Gobbler\ncreated for Krunker.io\nmodeled in Blender, textured in Substance Painter"
         ]
     },
     {
